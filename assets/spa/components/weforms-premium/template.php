@@ -27,7 +27,7 @@
             </div>
             <div class="banner-buttons">
                 <a href="#" class="wf-btn wf-btn-primary"><?php _e( 'Create Your First Form', 'weforms' ); ?></a>
-                <a href="#" class="wf-btn wf-btn-default"><?php _e( 'Read Full Guide', 'weforms' ); ?></a>
+                <a href="https://wedevs.com/weforms/" class="wf-btn wf-btn-default" target="_blank"><?php _e( 'Read Full Guide', 'weforms' ); ?></a>
             </div>
         </div><!-- end banner left column -->
 
@@ -50,7 +50,7 @@
         <div class="banner-right-column">
             <div class="banner-thumb">
                 <img src="<?php echo WEFORMS_ASSET_URI; ?>/images/premium/banner-thumb.svg" alt="Banner">
-                <a class="video-play-icon" href="#" @click.prevent="showModal = true">
+                <!-- <a class="video-play-icon" href="#" @click.prevent="showModal = true">
                     <svg width="15px" height="17px" viewBox="0 0 15 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <defs>
                             <linearGradient x1="50%" y1="100%" x2="12.980572%" y2="0%" id="linearGradient-1">
@@ -66,7 +66,7 @@
                             </g>
                         </g>
                     </svg>
-                </a>
+                </a> -->
             </div>
         </div><!-- end banner right column -->
 
@@ -252,7 +252,7 @@
                 </div>
             </div>
             <div class="import-right">
-                <a href="#" class="wf-btn wf-btn-primary wf-btn-lg"><?php _e( 'Upgrade Now', 'weforms' ); ?></a>
+                <a href="https://wedevs.com/weforms/pricing/" target="_blank" class="wf-btn wf-btn-primary wf-btn-lg"><?php _e( 'Upgrade Now', 'weforms' ); ?></a>
             </div>
         </div>
     </section><!-- end footer section -->

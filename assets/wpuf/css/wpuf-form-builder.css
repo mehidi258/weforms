@@ -1101,7 +1101,7 @@ ul.wpuf-form li .wpuf-password-field:after {
   height: 20px;
 }
 .wpuf-toggle-switch.big:after {
-  top: 3px;
+  top: 2.5px;
   left: 3px;
   width: 15px;
   height: 15px;
@@ -1126,10 +1126,10 @@ ul.wpuf-form li .wpuf-password-field:after {
   clear: both;
 }
 .wpuf-integrations-wrap .wpuf-integration {
-  margin-bottom: 15px;
-  background-color: #fff;
+  /* margin-bottom: 15px; */
+  /* background-color: #fff;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
-  border: 1px solid #e5e5e5;
+  border: 1px solid #e5e5e5; */
 }
 .wpuf-integrations-wrap .wpuf-integration .wpuf-integration-header {
   padding: 0;

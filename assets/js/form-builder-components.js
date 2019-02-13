@@ -1,7 +1,6 @@
 'use strict';
 
 /* assets/js/utils/jquery-siaf-start.js */
-
 ;(function ($) {
     'use strict';
 
@@ -217,6 +216,12 @@
     Vue.component('wpuf-integration', {
         template: '#tmpl-wpuf-integration',
 
+        data: function data() {
+            return {
+                // showModal: false,
+            };
+        },
+
         computed: {
 
             integrations: function integrations() {
@@ -298,6 +303,19 @@
 
             showHide: function showHide(target) {
                 $(target).closest('.wpuf-integration').toggleClass('collapsed');
+            },
+
+            openModal: function openModal(target) {
+                $(target).parents('.wpuf-integration').find('.wf-modal').addClass('wf-modal-open');
+            },
+
+            hideModal: function hideModal(target) {
+                $(target).parents('.wf-modal').removeClass('wf-modal-open');
+            },
+
+            save_form_builder: function save_form_builder(target) {
+                $('.save-form-builder').trigger('click');
+                this.hideModal(target);
             }
         }
     });
@@ -512,6 +530,7 @@
             this.$parent.$off('insertValueEditor');
             this.$parent.$off('deleteNotification');
         },
+
 
         methods: {
             setupEditor: function setupEditor() {
